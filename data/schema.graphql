@@ -1,0 +1,19 @@
+schema {
+  query: Query
+}
+
+type BabyName {
+  name: String!
+  gender: Gender!
+  count: Int!
+  year: Int!
+}
+
+enum Gender {
+  M
+  F
+}
+
+type Query {
+  counts(name: String!, gender: Gender!): [BabyName]
+}

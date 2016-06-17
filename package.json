@@ -8,7 +8,8 @@
     "build": "babel lib -d dist",
     "serve": "node dist/index.js",
     "start": "nodemon lib/index.js --exec babel-node",
-    "test": "mocha --compilers js:babel-register"
+    "test": "mocha --compilers js:babel-register",
+    "update-schema": "babel-node ./script/updateSchema.js"
   },
   "keywords": [
     "baby",
